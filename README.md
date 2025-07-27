@@ -1,5 +1,11 @@
 # TeamAlign - 次世代型BtoBオープンプラットフォーム
 
+## 🌐 オンラインデモ
+
+**GitHub Pages**: https://addness-info-osaka.github.io/TeamAlign/
+
+ライブサイトでTeamAlign Community Platformの全機能をお試しいただけます。
+
 ## 🎯 プロジェクト概要
 
 TeamAlignは「経営が見える。人がつながる。組織が進化する。」をコンセプトとした次世代型BtoBオープンプラットフォームです。AI経営の可視化、企業間マッチング、実践知の共有を通じて、組織変革を支援します。

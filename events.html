@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オンラインセミナー・ワークセッション - TeamAlign Community</title>
+    <meta name="description" content="TeamAlign Communityのオンラインセミナー・ワークセッション。実践的な組織変革スキルを身につける学習プログラム。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/logo.svg" alt="TeamAlign" class="logo">
+                <span class="brand-name">TeamAlign Community</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">ホーム</a></li>
+                <li><a href="events.html" class="nav-link active">セミナー・ワークセッション</a></li>
+                <li><a href="knowledge.html" class="nav-link">ナレッジ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-secondary">ログイン</button>
+                <button class="btn-primary">コミュニティに参加</button>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- オンラインセミナー・ワークセッションヒーロー -->
+    <section class="events-hero">
+        <div class="container">
+            <div class="events-hero-content">
+                <h1 class="events-title">
+                    実践的な学びの場<br>
+                    <span class="title-highlight">オンラインセミナー・ワークセッション</span>
+                </h1>
+                <p class="events-description">
+                    組織変革のプロフェッショナルによる実践的なセミナーと<br>
+                    体験型ワークセッションで、即戦力スキルを身につけましょう。
+                </p>
+                <div class="events-stats">
+                    <div class="events-stat">
+                        <span class="stat-number">48</span>
+                        <span class="stat-label">今月のセミナー</span>
+                    </div>
+                    <div class="events-stat">
+                        <span class="stat-number">8,200</span>
+                        <span class="stat-label">総受講者数</span>
+                    </div>
+                    <div class="events-stat">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">満足度</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn-primary btn-large">人気セミナーを見る</button>
+                    <button class="btn-outline">開催スケジュール</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セミナー・ワークセッションフィルター -->
+    <section class="events-controls">
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">すべて</button>
+                    <button class="filter-tab" data-filter="upcoming">📅 開催予定</button>
+                    <button class="filter-tab" data-filter="seminar">🎓 セミナー</button>
+                    <button class="filter-tab" data-filter="workshop">💼 ワークセッション</button>
+                    <button class="filter-tab" data-filter="hands-on">👆 ハンズオン</button>
+                    <button class="filter-tab" data-filter="recorded">📹 録画配信</button>
+                </div>
+                <div class="filter-selects">
+                    <select class="topic-select">
+                        <option value="all">すべてのトピック</option>
+                        <option value="okr">OKR・目標管理</option>
+                        <option value="leadership">リーダーシップ</option>
+                        <option value="engagement">エンゲージメント</option>
+                        <option value="dx">デジタル変革</option>
+                        <option value="hr">人事制度</option>
+                        <option value="culture">組織文化</option>
+                    </select>
+                    <select class="format-select">
+                        <option value="all">すべての形式</option>
+                        <option value="online">オンライン</option>
+                        <option value="offline">オフライン</option>
+                        <option value="hybrid">ハイブリッド</option>
+                    </select>
+                    <select class="level-select">
+                        <option value="all">すべてのレベル</option>
+                        <option value="beginner">初級</option>
+                        <option value="intermediate">中級</option>
+                        <option value="advanced">上級</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 注目のセミナー・ワークセッション -->
+    <section class="featured-events">
+        <div class="container">
+            <h2 class="section-title">🌟 注目のセミナー・ワークセッション</h2>
+            <div class="featured-events-grid">
+                <div class="event-card featured large">
+                    <div class="event-image">
+                        <div class="event-type">特別セミナー</div>
+                        <div class="event-live">🔴 LIVE</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">📅 2024年2月15日 (木) 19:00-21:00</span>
+                            <span class="event-format online">🌐 オンライン</span>
+                        </div>
+                        <h3 class="event-title">AI時代の組織変革戦略 - 実践的アプローチと成功事例</h3>
+                        <p class="event-description">
+                            AI・DXが加速する2024年の組織変革トレンドを業界第一人者が解説。
+                            実際の導入事例から学ぶ実践的なロードマップ策定手法をお届けします。
+                        </p>
+                        <div class="event-speakers">
+                            <div class="speaker">
+                                <div class="speaker-avatar">👨‍🎓</div>
+                                <div class="speaker-info">
+                                    <span class="speaker-name">佐藤 コンサル</span>
+                                    <span class="speaker-title">組織変革コンサルタント</span>
+                                </div>
+                            </div>
+                            <div class="speaker">
+                                <div class="speaker-avatar">👩‍💼</div>
+                                <div class="speaker-info">
+                                    <span class="speaker-name">田中 人事部長</span>
+                                    <span class="speaker-title">大手IT企業 CHRO</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-stats">
+                            <span class="attendees">👥 受講予定: 487名</span>
+                            <span class="capacity">定員: 500名</span>
+                            <span class="price">💰 無料</span>
+                        </div>
+                        <div class="event-tags">
+                            <span class="event-tag">組織変革</span>
+                            <span class="event-tag">AI・DX</span>
+                            <span class="event-tag">戦略立案</span>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn-primary">受講申込</button>
+                            <button class="btn-outline">詳細を見る</button>
+                            <button class="btn-icon">🔖</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card featured">
+                    <div class="event-image">
+                        <div class="event-type">ワークセッション</div>
+                        <div class="event-popular">🔥 人気</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">📅 2024年2月20日 (火) 14:00-17:00</span>
+                            <span class="event-format online">🌐 オンライン</span>
+                        </div>
+                        <h3 class="event-title">実践OKR設計ワークセッション</h3>
+                        <p class="event-description">
+                            効果的なOKR設計の実践的なワークセッション。
+                            実際に自社課題でOKR設計を体験し、即実践できるスキルを習得。
+                        </p>
+                        <div class="event-stats">
+                            <span class="attendees">👥 受講予定: 28名</span>
+                            <span class="capacity">定員: 30名</span>
+                            <span class="price">💰 ¥8,000</span>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn-primary">受講申込</button>
+                            <button class="btn-outline">詳細</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card featured">
+                    <div class="event-image">
+                        <div class="event-type">ハンズオン</div>
+                        <div class="event-new">🆕 NEW</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">📅 2024年2月25日 (日) 13:00-17:00</span>
+                            <span class="event-format online">🌐 オンライン</span>
+                        </div>
+                        <h3 class="event-title">データ分析による組織診断ハンズオン</h3>
+                        <p class="event-description">
+                            実際のデータを使った組織診断の手法を学習。
+                            Excel・Googleスプレッドシートで即実践できる分析テクニック。
+                        </p>
+                        <div class="event-stats">
+                            <span class="attendees">👥 受講予定: 15名</span>
+                            <span class="capacity">定員: 20名</span>
+                            <span class="price">💰 ¥12,000</span>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn-primary">受講申込</button>
+                            <button class="btn-outline">詳細</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 開催予定のセミナー・ワークセッション -->
+    <section class="upcoming-events">
+        <div class="container">
+            <h2 class="section-title">📅 開催予定のセミナー・ワークセッション</h2>
+            <div class="events-list">
+                <div class="event-item">
+                    <div class="event-date-block">
+                        <span class="date-day">16</span>
+                        <span class="date-month">2月</span>
+                        <span class="date-time">19:00</span>
+                    </div>
+                    <div class="event-info">
+                        <div class="event-header">
+                            <h3 class="event-title">1on1ミーティング効果最大化セミナー</h3>
+                            <div class="event-meta">
+                                <span class="event-type">セミナー</span>
+                                <span class="event-format online">オンライン</span>
+                                <span class="event-level beginner">初級</span>
+                            </div>
+                        </div>
+                        <p class="event-description">部下との効果的な1on1の進め方、よくある失敗パターンと改善策を実例で学習。テンプレート付き。</p>
+                        <div class="event-details">
+                            <span class="speaker">講師: 山田 HR専門家</span>
+                            <span class="attendees">受講予定: 124名</span>
+                            <span class="price">無料</span>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <button class="btn-primary btn-small">受講申込</button>
+                        <button class="btn-outline btn-small">詳細</button>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date-block">
+                        <span class="date-day">18</span>
+                        <span class="date-month">2月</span>
+                        <span class="date-time">10:00</span>
+                    </div>
+                    <div class="event-info">
+                        <div class="event-header">
+                            <h3 class="event-title">エンゲージメント分析実践ワークセッション</h3>
+                            <div class="event-meta">
+                                <span class="event-type">ワークセッション</span>
+                                <span class="event-format online">オンライン</span>
+                                <span class="event-level intermediate">中級</span>
+                            </div>
+                        </div>
+                        <p class="event-description">人事データを活用したエンゲージメント分析と改善施策立案の実践的手法。実際にExcelで分析体験。</p>
+                        <div class="event-details">
+                            <span class="speaker">講師: 鈴木 データアナリスト</span>
+                            <span class="attendees">受講予定: 32名</span>
+                            <span class="price">¥15,000</span>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <button class="btn-primary btn-small">受講申込</button>
+                        <button class="btn-outline btn-small">詳細</button>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date-block">
+                        <span class="date-day">22</span>
+                        <span class="date-month">2月</span>
+                        <span class="date-time">14:30</span>
+                    </div>
+                    <div class="event-info">
+                        <div class="event-header">
+                            <h3 class="event-title">製造業DX成功事例セミナー</h3>
+                            <div class="event-meta">
+                                <span class="event-type">セミナー</span>
+                                <span class="event-format online">オンライン</span>
+                                <span class="event-level advanced">上級</span>
+                            </div>
+                        </div>
+                        <p class="event-description">製造業に特化したDX成功事例の深堀り分析と実装のポイント。ロードマップテンプレート提供。</p>
+                        <div class="event-details">
+                            <span class="speaker">講師: 田中 製造業コンサル</span>
+                            <span class="attendees">受講予定: 48名</span>
+                            <span class="price">¥18,000</span>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <button class="btn-primary btn-small">受講申込</button>
+                        <button class="btn-outline btn-small">詳細</button>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date-block">
+                        <span class="date-day">28</span>
+                        <span class="date-month">2月</span>
+                        <span class="date-time">16:00</span>
+                    </div>
+                    <div class="event-info">
+                        <div class="event-header">
+                            <h3 class="event-title">組織変革振り返りワークセッション</h3>
+                            <div class="event-meta">
+                                <span class="event-type">ワークセッション</span>
+                                <span class="event-format online">オンライン</span>
+                                <span class="event-level all">全レベル</span>
+                            </div>
+                        </div>
+                        <p class="event-description">今月の組織変革の取り組みを振り返り、来月のアクションプランを策定する実践的ワークセッション。</p>
+                        <div class="event-details">
+                            <span class="speaker">ファシリテーター: コミュニティ運営</span>
+                            <span class="attendees">受講予定: 67名</span>
+                            <span class="price">無料</span>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <button class="btn-primary btn-small">受講申込</button>
+                        <button class="btn-outline btn-small">詳細</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 録画配信・アーカイブ -->
+    <section class="recorded-events">
+        <div class="container">
+            <h2 class="section-title">📹 録画配信・セミナーアーカイブ</h2>
+            <div class="recorded-grid">
+                <div class="recorded-card">
+                    <div class="recorded-thumbnail">
+                        <div class="play-overlay">▶</div>
+                        <div class="duration">60:45</div>
+                        <div class="views">👁 2,134回視聴</div>
+                    </div>
+                    <div class="recorded-content">
+                        <h3 class="recorded-title">OKR導入失敗事例から学ぶ成功のポイント【実践セミナー】</h3>
+                        <p class="recorded-description">実際の失敗事例を基に、OKR導入時の落とし穴と回避方法を解説。導入チェックリスト付き。</p>
+                        <div class="recorded-meta">
+                            <span class="recorded-date">2024年1月25日 開催</span>
+                            <span class="recorded-speaker">講師: 佐藤コンサル</span>
+                        </div>
+                        <div class="recorded-tags">
+                            <span class="tag">OKR</span>
+                            <span class="tag">失敗事例</span>
+                            <span class="tag">実践セミナー</span>
+                        </div>
+                        <button class="btn-primary btn-small">受講する</button>
+                    </div>
+                </div>
+
+                <div class="recorded-card">
+                    <div class="recorded-thumbnail">
+                        <div class="play-overlay">▶</div>
+                        <div class="duration">75:20</div>
+                        <div class="views">👁 1,892回視聴</div>
+                    </div>
+                    <div class="recorded-content">
+                        <h3 class="recorded-title">リモートワーク組織運営ワークセッション</h3>
+                        <p class="recorded-description">分散チームでの一体感醸成と生産性向上の実践的手法。ワークシート・テンプレート付き。</p>
+                        <div class="recorded-meta">
+                            <span class="recorded-date">2024年1月18日 開催</span>
+                            <span class="recorded-speaker">講師: 田中人事部長</span>
+                        </div>
+                        <div class="recorded-tags">
+                            <span class="tag">リモートワーク</span>
+                            <span class="tag">ワークセッション</span>
+                            <span class="tag">実践ツール</span>
+                        </div>
+                        <button class="btn-primary btn-small">受講する</button>
+                    </div>
+                </div>
+
+                <div class="recorded-card">
+                    <div class="recorded-thumbnail">
+                        <div class="play-overlay">▶</div>
+                        <div class="duration">90:15</div>
+                        <div class="views">👁 2,567回視聴</div>
+                    </div>
+                    <div class="recorded-content">
+                        <h3 class="recorded-title">次世代マネジメント実践ハンズオン</h3>
+                        <p class="recorded-description">Z世代・ミレニアル世代の価値観を理解し、効果的なマネジメントを実現する具体的手法。</p>
+                        <div class="recorded-meta">
+                            <span class="recorded-date">2024年1月12日 開催</span>
+                            <span class="recorded-speaker">講師: 山田VP</span>
+                        </div>
+                        <div class="recorded-tags">
+                            <span class="tag">次世代</span>
+                            <span class="tag">マネジメント</span>
+                            <span class="tag">ハンズオン</span>
+                        </div>
+                        <button class="btn-primary btn-small">受講する</button>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-section">
+                <button class="btn-outline">もっと見る</button>
+                <p class="archive-info">過去120回のセミナー・ワークセッションアーカイブが利用可能</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- セミナー・ワークセッションカレンダー -->
+    <section class="event-calendar">
+        <div class="container">
+            <h2 class="section-title">📅 セミナー・ワークセッションカレンダー</h2>
+            <div class="calendar-wrapper">
+                <div class="calendar-header">
+                    <button class="calendar-nav prev">‹</button>
+                    <h3 class="calendar-month">2024年 2月</h3>
+                    <button class="calendar-nav next">›</button>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-day header">日</div>
+                    <div class="calendar-day header">月</div>
+                    <div class="calendar-day header">火</div>
+                    <div class="calendar-day header">水</div>
+                    <div class="calendar-day header">木</div>
+                    <div class="calendar-day header">金</div>
+                    <div class="calendar-day header">土</div>
+                    
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day">1</div>
+                    <div class="calendar-day">2</div>
+                    <div class="calendar-day">3</div>
+                    
+                    <div class="calendar-day">4</div>
+                    <div class="calendar-day">5</div>
+                    <div class="calendar-day">6</div>
+                    <div class="calendar-day">7</div>
+                    <div class="calendar-day">8</div>
+                    <div class="calendar-day">9</div>
+                    <div class="calendar-day">10</div>
+                    
+                    <div class="calendar-day">11</div>
+                    <div class="calendar-day">12</div>
+                    <div class="calendar-day">13</div>
+                    <div class="calendar-day">14</div>
+                    <div class="calendar-day has-event">15<div class="event-dot"></div></div>
+                    <div class="calendar-day has-event">16<div class="event-dot"></div></div>
+                    <div class="calendar-day">17</div>
+                    
+                    <div class="calendar-day has-event">18<div class="event-dot"></div></div>
+                    <div class="calendar-day">19</div>
+                    <div class="calendar-day has-event">20<div class="event-dot"></div></div>
+                    <div class="calendar-day">21</div>
+                    <div class="calendar-day has-event">22<div class="event-dot"></div></div>
+                    <div class="calendar-day">23</div>
+                    <div class="calendar-day">24</div>
+                    
+                    <div class="calendar-day has-event">25<div class="event-dot"></div></div>
+                    <div class="calendar-day">26</div>
+                    <div class="calendar-day">27</div>
+                    <div class="calendar-day has-event">28<div class="event-dot"></div></div>
+                    <div class="calendar-day">29</div>
+                </div>
+                <div class="calendar-legend">
+                    <div class="legend-item">
+                        <div class="legend-dot"></div>
+                        <span>セミナー・ワークセッション開催日</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セミナー・ワークセッション講師募集 -->
+    <section class="host-info">
+        <div class="container">
+            <div class="host-content">
+                <h2>セミナー・ワークセッション講師として登壇しませんか？</h2>
+                <p>TeamAlign Communityでは、実践的な知見を持つ専門家によるセミナー・ワークセッションの開催を支援しています。</p>
+                <div class="host-benefits">
+                    <div class="benefit">
+                        <span class="benefit-icon">🎓</span>
+                        <span class="benefit-text">専門知識の体系的な発信とソートリーダーシップ</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">🚀</span>
+                        <span class="benefit-text">実践的スキルを求める受講者との直接的つながり</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">💼</span>
+                        <span class="benefit-text">講師料・企画サポート・集客支援の提供</span>
+                    </div>
+                </div>
+                <div class="host-actions">
+                    <button class="btn-primary">講師登録・企画相談</button>
+                    <button class="btn-outline">講師ガイドラインを見る</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/logo.svg" alt="TeamAlign" class="logo">
+                        <span class="brand-name">TeamAlign Community</span>
+                    </div>
+                    <p>組織変革のプロフェッショナルが集まる<br>日本最大級のビジネスコミュニティ</p>
+                </div>
+                <div class="footer-section">
+                    <h4>セミナー・ワークセッション</h4>
+                    <ul>
+                        <li><a href="#upcoming">開催予定</a></li>
+                        <li><a href="#seminars">セミナー</a></li>
+                        <li><a href="#workshops">ワークセッション</a></li>
+                        <li><a href="#recordings">録画配信</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>学習コンテンツ</h4>
+                    <ul>
+                        <li><a href="events.html">セミナー・ワークセッション</a></li>
+                        <li><a href="knowledge.html">ナレッジベース</a></li>
+                        <li><a href="#templates">ツール・テンプレート</a></li>
+                        <li><a href="#calendar">カレンダー</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>サポート</h4>
+                    <ul>
+                        <li><a href="#">ヘルプセンター</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TeamAlign Community. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="events.js"></script>
+</body>
+</html> 

@@ -734,7 +734,6 @@ body {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  color: var(--gray-700);
   font-weight: 500;
 }
 
@@ -4157,4 +4156,195 @@ body {
         margin: 1rem;
         max-width: calc(100vw - 2rem);
     }
-} 
+}
+
+/* Company Icon Styles */
+.company-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.company-icon.large {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+}
+
+/* Story Company Pair Icons */
+.story-companies .company-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+}
+
+.company-single .company-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+}
+
+/* Hero Section Company Icons */
+.hero-visual .company-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+}
+
+/* Industry-specific icon backgrounds */
+.company-icon:has-text("🏭") {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.company-icon:has-text("💻") {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.company-icon:has-text("🚀") {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.company-icon:has-text("🛒") {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.company-icon:has-text("🚚") {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+/* Alternative approach using data attributes for better styling control */
+.company-icon[data-industry="manufacturing"] {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.company-icon[data-industry="tech"] {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.company-icon[data-industry="startup"] {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.company-icon[data-industry="retail"] {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.company-icon[data-industry="logistics"] {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+/* ===== 新しいセクション用CSS ===== */
+
+/* Content Icons for Knowledge and Events */
+.content-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+.content-icon.large {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+}
+
+.content-icon.small {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Category-specific content icons */
+.content-icon[data-category="guide"] {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.content-icon[data-category="case-study"] {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.content-icon[data-category="technique"] {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.content-icon[data-category="tool"] {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.content-icon[data-category="webinar"] {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.content-icon[data-category="workshop"] {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+/* Visual enhancement for cards */
+.knowledge-card,
+.event-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.knowledge-card::before,
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
+    transition: height 0.3s ease;
+}
+
+.knowledge-card:hover::before,
+.event-card:hover::before {
+    height: 6px;
+}
+
+/* Loading state for dynamic content */
+.loading-placeholder {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 4px;
+    height: 20px;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Company Icon Styles */
